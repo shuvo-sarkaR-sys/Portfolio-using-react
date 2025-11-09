@@ -12,18 +12,17 @@ const Project = () => {
         <h1 className='md:text-5xl text-2xl font-bold ml-5 '>Lets have a look at</h1>
         <h1 className='md:text-5xl text-2xl font-bold ml-5'>my <span className='text-orange-500'>Portfolio</span></h1>
        <div className="md:h-[400px] h-[200px] w-[400px] md:w-[900px]   mx-auto  ">
-      <a href="https://github.com/shuvo-sarkaR-sys">
-      <Carousel>
+       <Carousel>
         <div className='flex gap-2'>
-        <img className=' md:w-1/2' src={project1} alt="..." />
-        <img className='md:w-1/2' src={project2} alt="..." />
+        <img className=' w-1/2' src={project1} alt="..." />
+        <img className='w-1/2' src={project2} alt="..." />
         </div>
         <div className='flex gap-2'>
-            <img className='md:w-1/2'  src={aadi} alt="..." />
-        <img className='md:w-1/2'  src={project} alt="..." />
+            <img className='w-1/2'  src={aadi} alt="..." />
+        <img className='w-1/2'  src={project} alt="..." />
         </div>
-        <img className='md:w-2/3' src={movie} alt="..." />
-      </Carousel></a>
+        <img className='w-2/3' src={movie} alt="..." />
+      </Carousel>
       <br />
       <br />
     </div>

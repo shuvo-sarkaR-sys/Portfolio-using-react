@@ -1,23 +1,24 @@
 import React, { useState } from 'react'
 import logo from '../assets/file (1).png'
 import dots from '../assets/menu-dots.png'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
-    const [state, setState] = useState("Home")
+    const [state, setState] = useState("Img")
     const handleClick = (link)=>{
         setState(link)
     }
   return (
     <div >
-      <ul className='flex   justify-between bg-black text-white rounded-full h-16 mx-10 mt-3 items-center px-2 font-sans'>
-       <a href="#"><li onClick={()=> handleClick("Home")} className={`md:px-12 px-6 py-3 md:py-3 rounded-full ${state === "Home" ? "bg-orange-400 text-white" : "text-white"}`} >Home</li></a>
-        <li onClick={()=> handleClick("About")} className={`px-12 hidden md:block py-3 rounded-full ${state === "About" ? "bg-orange-400" : "text-white"}`}>About</li>
-        <a href="#service"><li onClick={()=>handleClick("Service")} className={`hidden md:block px-12 py-3 rounded-full ${state === "Service" ? "bg-orange-400" : "text-white"}`}>Service</li></a>
-        <a href="/"><li onClick={()=>handleClick("Img")} className={`md:px-12 px-3 py-3 ml-6 rounded-full ${state === "Img" ? "bg-orange-400" : "text-white"}`}><img className='max-w-28' src={logo} alt="" /></li></a>
-        <li onClick={()=>handleClick("Resume")} className={`hidden md:block px-12 py-3 rounded-full ${state === "Resume" ? "bg-orange-400" : "text-white"}`}>Resume</li>
-        <a href="#project"><li onClick={()=>handleClick("Project")} className={`md:block hidden px-12 py-3 rounded-full ${state === "Project" ? "bg-orange-400" : "text-white"}`}>Project</li></a>
-        <a href="#contact"><li onClick={()=>handleClick("Contact")} className={`md:block hidden px-12 py-3 rounded-full ${state === "Contact" ? "bg-orange-400" : "text-white"}`}>Contact</li></a>
-        <li onClick={()=>handleClick("Contact")} className={`md:hidden block  px-6 py-1 rounded-full ${state === "Contact" ? "bg-orange-400" : "text-white"}`}><img className='w-10' src={dots}></img></li>
-      </ul>
+      <ul className='flex   justify-between bg-zinc-800 text-white   h-16 px-4 w-full  xl:px-36 mt-3 items-center   font-sans'>
+                <a href="#project"><li   >Project</li></a>
+
+                  <a href="https://drive.google.com/file/d/1QjaGzZapn92HZvu9WrdUbwoazxXkT79s/view?usp=sharing" target='_blank' rel="noopener noreferrer"><li >Resume</li></a>
+
+        <a href="/"><li onClick={()=>handleClick("Img")} className={`md:px-12 p-1 ml-0 md:ml-6 rounded-full ${state === "Img" ? "bg-[#4D7DA3]" : "text-white"}`}><img className='md:w-28 w-12' src={logo} alt="" /></li></a>
+             <a href="#about"> <li>About</li></a> 
+
+         <a href="#contact"><li  >Contact</li></a>
+       </ul>
     </div>
   )
 }

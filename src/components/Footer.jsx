@@ -7,22 +7,18 @@ const Footer = () => {
     return (
         <div className='bg-zinc-800 text-slate-300 ' id='contact'>
             <br />
-            <div className='flex justify-between m-10'>
-                <h1 className='md:text-4xl text-2xl font-bold'>Lets Connect there</h1>
-                <button className='bg-orange-500 px-3 rounded-3xl md:rounded-full border-2 text-xl text-white'>Hire me</button>
+            <div className='flex mx-5 justify-between md:mx-20 xl:mx-40 my-5'>
+                <h1 className='xl:text-4xl md:text-3xl text-xl font-bold'>Lets Connect there</h1>
+                <button className='bg-orange-500 px-8 rounded-3xl md:rounded-full border-2 text-xl text-white'>Hire me</button>
             </div>
-            <hr />
+             
             <br />
-            <div className='flex gap-5 md:gap-10 mx-6'>
+            <div className='flex justify-center gap-5 md:gap-16 my-5 md:my-14 mx-6'>
                 <div>
                     <h1 className='font-bold text-xl'>Shuvo</h1>
                     <br />
                     <p className=' '>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Porro animi <br /> itaque odit distinctio explicabo earum optio
-
-                        eaque accusantium! Similique sit <br /> ut aliquam fuga distinctio
-                        quia quod delectus aperiam enim nostrum.
+                       I have 2 years exprience front-end developer. I will shift your business offline <br /> to online store(e-commerce). I provide custom web application and clean code,<br /> maintainable, dynamic web app.
                     </p>
                     <br />
                     <div className='flex gap-3'>
@@ -56,7 +52,7 @@ const Footer = () => {
             <br />
             <hr />
              <br />
-                <p>Copyright 2024 Shuvo sarkar. all Right</p>
+                <p className='text-center'>Copyright 2024 Shuvo sarkar. all Right</p>
                 <br />
         </div>
     )

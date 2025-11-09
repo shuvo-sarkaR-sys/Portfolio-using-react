@@ -37,10 +37,10 @@ const Skill = () => {
   return (
     <div
       ref={skillRef}
-      className='md:h-screen mb-5 flex flex-col justify-center items-center'
+      className='md:h-auto py-10 md:py-20 2xl:py-36 flex flex-col justify-center items-center'
     >
-      <h1 className="text-3xl font-bold mb-6">My <span className='text-orange-400'>Skills</span></h1>
-      <div className="w-2/4">
+      <h1 className="xl:text-5xl md:text-4xl font-bold mb-6">My <span className='text-[#4D7DA3]'>Skills</span></h1>
+      <div className="md:w-2/4 w-[85%]">
         {skills.map((skill, index) => (
           <div key={index} className="mb-4">
             <div className="text-base font-medium">{skill.name}</div>
