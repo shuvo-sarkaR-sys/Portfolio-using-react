@@ -9,7 +9,7 @@ const Navbar = () => {
     }
   return (
     <div >
-      <ul className='flex   justify-between bg-zinc-800 text-white   h-16 px-4 w-full  xl:px-36 mt-3 items-center   font-sans'>
+      <ul className='flex   justify-between bg-zinc-800 text-white   h-16 px-4 w-full  xl:px-36  mt-0 items-center   font-sans'>
                 <a href="#project"><li   >Project</li></a>
 
                   <a href="https://drive.google.com/file/d/1QjaGzZapn92HZvu9WrdUbwoazxXkT79s/view?usp=sharing" target='_blank' rel="noopener noreferrer"><li >Resume</li></a>
